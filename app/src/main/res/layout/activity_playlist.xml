@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.franciscoolivero.android.musicalstructure.PlaylistActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/descriptionTextViewStyle"
+                android:text="@string/playlists_description" />
+
+            <TextView
+                style="@style/hyperLink_TextViewStyle"
+                android:text="https://developers.google.com/youtube/v3/docs/playlists/list?hl=es-419" />
+
+            <View
+                style="@style/separatorLine"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                style="@style/categoryStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Playlist 1" />
+
+            <TextView
+                style="@style/categoryStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Playlist 2" />
+
+            <TextView
+                style="@style/categoryStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Playlist 3" />
+
+            <TextView
+                style="@style/categoryStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Playlist 4" />
+
+            <TextView
+                style="@style/categoryStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Playlist 5" />
+
+
+            <TextView
+                style="@style/categoryStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Playlist 6" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/playingNow"
+        style="@style/playingNow"
+        android:text="Playing Now" />
+
+</LinearLayout>

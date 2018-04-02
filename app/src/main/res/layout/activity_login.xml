@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.franciscoolivero.android.musicalstructure.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/descriptionTextViewStyle"
+            android:text="@string/login_screenDescription" />
+
+        <TextView
+            style="@style/hyperLink_TextViewStyle"
+            android:text="https://firebase.google.com/docs/auth/?hl=en-419" />
+
+    </LinearLayout>
+
+    <View style="@style/separatorLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="@string/userName_editText"
+            android:textColor="@android:color/darker_gray" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="@string/password_editText"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/signInButton"
+            style="@style/implemented_button"
+            android:text="@string/login_button" />
+
+        <Button
+            style="@style/unImplemented_button"
+            android:layout_marginBottom="16dp"
+            android:text="@string/register_button" />
+    </LinearLayout>
+
+</LinearLayout>

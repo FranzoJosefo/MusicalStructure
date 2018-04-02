@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.franciscoolivero.android.musicalstructure.FullAlbumActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/descriptionTextViewStyle"
+            android:text="@string/goPremium_description" />
+
+        <TextView
+            style="@style/hyperLink_TextViewStyle"
+            android:text="https://firebase.google.com/docs/use-cases/payments?hl=en-419" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/playingNow"
+        style="@style/playingNow"
+        android:text="Playing Now" />
+
+</LinearLayout>

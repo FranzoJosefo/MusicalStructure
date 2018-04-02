@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.franciscoolivero.android.musicalstructure.FullAlbumActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/descriptionTextViewStyle"
+                android:text="@string/album_screenDescription" />
+
+            <View
+                style="@style/separatorLine"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                style="@style/songTextViewStyle"
+                android:text="@string/playingSong_text" />
+
+            <TextView
+                style="@style/artistTextViewStyle"
+                android:text="@string/playingArtist_text" />
+
+            <Button
+                android:id="@+id/fullAlbum"
+                style="@style/unImplemented_button"
+                android:layout_gravity="center"
+                android:text="@string/downloadAlbum_button" />
+
+            <TextView
+                style="@style/songListItemStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Song 1" />
+
+            <TextView
+                style="@style/songListItemStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Song 2" />
+
+            <TextView
+                style="@style/songListItemStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Song 3" />
+
+            <TextView
+                style="@style/songListItemStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Song 4" />
+
+            <TextView
+                style="@style/songListItemStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Song 5" />
+
+            <TextView
+                style="@style/songListItemStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Song 6" />
+
+            <TextView
+                style="@style/songListItemStyle"
+                android:background="@android:color/darker_gray"
+                android:text="Song 7" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

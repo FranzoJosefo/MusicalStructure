@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.franciscoolivero.android.musicalstructure.PlayingNowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <TextView
+            style="@style/descriptionTextViewStyle"
+            android:text="@string/playing_description" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/separatorLine"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/songTextViewStyle"
+            android:text="@string/playingSong_text" />
+
+        <TextView
+            style="@style/artistTextViewStyle"
+            android:text="@string/playingArtist_text" />
+
+        <Button
+            android:id="@+id/fullAlbum"
+            style="@style/implemented_button"
+            android:text="@string/fullAlbum_button" />
+
+    </LinearLayout>
+
+    <View style="@style/separatorLine" />
+
+    <TextView
+        style="@style/descriptionTextViewStyle"
+        android:text="Reproduction Buttons would appear here\nwith progress bar." />
+
+</LinearLayout>
