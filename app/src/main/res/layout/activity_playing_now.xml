@@ -6,10 +6,19 @@
     android:orientation="vertical"
     tools:context="com.franciscoolivero.android.musicalstructure.PlayingNowActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        style="@style/screenLabelStyle"
+        android:text="@string/playing_label_caps" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_height="wrap_content"
         android:gravity="center">
 
         <TextView
@@ -25,7 +34,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -38,8 +47,9 @@
             android:text="@string/playingArtist_text" />
 
         <Button
-            android:id="@+id/fullAlbum"
+            android:id="@+id/full_album"
             style="@style/implemented_button"
+            android:layout_marginBottom="8dp"
             android:text="@string/fullAlbum_button" />
 
     </LinearLayout>
@@ -48,6 +58,6 @@
 
     <TextView
         style="@style/descriptionTextViewStyle"
-        android:text="Reproduction Buttons would appear here\nwith progress bar." />
+        android:text="@string/playing_description_2" />
 
 </LinearLayout>

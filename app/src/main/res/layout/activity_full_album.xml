@@ -6,6 +6,16 @@
     android:orientation="vertical"
     tools:context="com.franciscoolivero.android.musicalstructure.FullAlbumActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        style="@style/screenLabelStyle"
+        android:text="@string/album_label_caps" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -33,7 +43,7 @@
                 android:text="@string/playingArtist_text" />
 
             <Button
-                android:id="@+id/fullAlbum"
+                android:id="@+id/full_album"
                 style="@style/unImplemented_button"
                 android:layout_gravity="center"
                 android:text="@string/downloadAlbum_button" />

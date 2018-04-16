@@ -4,7 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.franciscoolivero.android.musicalstructure.FullAlbumActivity">
+    tools:context="com.franciscoolivero.android.musicalstructure.GoPremiumActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        style="@style/screenLabelStyle"
+        android:text="@string/premium_label_caps" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +34,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/playingNow"
+        android:id="@+id/playing_now"
         style="@style/playingNow"
         android:text="Playing Now" />
 

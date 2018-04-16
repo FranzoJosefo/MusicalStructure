@@ -8,6 +8,9 @@
     <!-- Login button text. [CHAR LIMIT=12] -->
     <string name="login_button">Sign-In</string>
 
+    <!-- Login label in caps. [CHAR LIMIT=12] -->
+    <string name="login_label_caps">LOGIN SCREEN</string>
+
     <!-- EditText username text. -->
     <string name="userName_editText">Enter username (dont)</string>
 
@@ -17,20 +20,35 @@
     <!-- Register button text. [CHAR LIMIT=12] -->
     <string name="register_button">Register Now!</string>
 
-    <!-- Label for homepage. [CHAR LIMIT=12] -->
+    <!-- Label for homepage used in manifest. [CHAR LIMIT=12] -->
     <string name="homepage_label">Homepage</string>
+
+    <!-- Label for homepage in caps. [CHAR LIMIT=12] -->
+    <string name="homepage_label_caps">HOMEPAGE</string>
+
+    <!-- Description for homepage. -->
+    <string name="homepage_description">This is the homepage, you are redirected here after login.\n\n
+    It will have a searchView which will work with an API created to interact with the server containing the music we use. This part would be one challenge to develop for sure\n\n
+    I used the public class SearchView, specifically the widget which is an instance of that class.\n\n
+    I would also probably use the following link as reference to implement this:</string>
 
     <!-- Search button text. [CHAR LIMIT=12] -->
     <string name="search_button">Search</string>
 
-    <!-- Label for Playing Now section. [CHAR LIMIT=20] -->
+    <!-- Label for Playing Now used in manifest. [CHAR LIMIT=20] -->
     <string name="playing_label">Playing Now</string>
+
+    <!-- Label for Playing Now section all Caps. [CHAR LIMIT=20] -->
+    <string name="playing_label_caps">PLAYING NOW</string>
 
     <!-- Artist TextView in Playing Now section. [CHAR LIMIT=40] -->
     <string name="playingArtist_text">The Aristocrats</string>
 
     <!-- Song TextView in Playing Now section. [CHAR LIMIT=40] -->
     <string name="playingSong_text">Living the dream</string>
+
+    <!-- Second description explaining where the reproduction buttons are placed -->
+    <string name="playing_description_2">Reproduction Buttons would appear here\nwith progress bar.</string>
 
     <!-- Describes what API/Classes the activity would use -->
     <string name="playing_description">Here, the song which is current playing is displayed.\n\n
@@ -41,8 +59,11 @@
     <!-- Full Album button text. [CHAR LIMIT=20] -->
     <string name="fullAlbum_button">Go to full album</string>
 
-    <!-- Label for Full Album section. [CHAR LIMIT=12] -->
+    <!-- Label for Full Album used in manifest. [CHAR LIMIT=12] -->
     <string name="album_label">Full Album</string>
+
+    <!-- Label for Full Album section all caps. [CHAR LIMIT=12] -->
+    <string name="album_label_caps">FULL ALBUM</string>
 
     <!-- Description of what the Full Album shows and the class/API used. -->
     <string name="album_screenDescription">"This screen would simply show a collection/list/array of the songs contained in this album.\n\nDuration, and option to play/download, etc. Would be displayed along with each song item in the list, using "public class ListView".\n\nThe data included in the arrays, would be fetched with a network call using an API, probably a custom one assuming we have our own server of music with an API built for this purpose."</string>
@@ -50,14 +71,20 @@
     <!-- Download Full Album button text. -->
     <string name="downloadAlbum_button">Download full album</string>
 
-    <!-- Label for Podcast category. [CHAR LIMIT=20] -->
+    <!-- Label for Podcast category used in manifest. [CHAR LIMIT=20] -->
     <string name="podcasts_label">Recommended Podcasts</string>
+
+    <!-- Label for Podcast category all caps. [CHAR LIMIT=20] -->
+    <string name="podcasts_label_caps">RECOMMENDED PODCASTS</string>
 
     <!-- Description of what the Full Album shows and the class/API used. -->
     <string name="podcasts_screenDescription">"TBD"</string>
 
-    <!-- Label for Go Premium section. [CHAR LIMIT=12] -->
+    <!-- Label for Go Premium used in manifest. [CHAR LIMIT=12] -->
     <string name="premium_label">Go Premium!</string>
+
+    <!-- Label for Go Premium section. [CHAR LIMIT=12] -->
+    <string name="premium_label_caps">GO PREMIUM</string>
 
     <!-- Description of what the Go Premium section displays and the class/API used. -->
     <string name="goPremium_description">In this screen, the user will have the chance to enroll in a premium account, so he can download music into his device, and listen to music add-free.\n\nTo achieve this, I would also use the Firebase API, specifically what is found in the following link:</string>
@@ -65,8 +92,11 @@
     <!-- Label for Settings section. [CHAR LIMIT=12] -->
     <string name="settings_label">Settings</string>
 
-    <!-- Label for My Playlists section. [CHAR LIMIT=12] -->
+    <!-- Label for My Playlists used in manifest. [CHAR LIMIT=12] -->
     <string name="playlists_label">My Playlists</string>
+
+    <!-- Label for My Playlists section. [CHAR LIMIT=12] -->
+    <string name="playlists_label_caps">MY PLAYLISTS</string>
 
     <!-- Description of what the My Playlists section shows and the class/API used. -->
     <string name="playlists_description">Using a ListView class, several playlist Objects would be displayed here within a scrollview probably.\n\n Also an API should be used to /POST and /GET all the content for each user.\n\n Something similar to the following link.</string>

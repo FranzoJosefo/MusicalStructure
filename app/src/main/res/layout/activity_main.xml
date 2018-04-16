@@ -6,11 +6,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        style="@style/screenLabelStyle"
+        android:text="@string/homepage_label_caps" />
+
     <SearchView
-        android:id="@+id/searchViewHomePage"
+        android:id="@+id/searchview_home_page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +26,16 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/goPremium"
+                style="@style/descriptionTextViewStyle"
+                android:text="@string/homepage_description" />
+
+            <TextView
+                style="@style/hyperLink_TextViewStyle"
+                android:layout_marginBottom="16dp"
+                android:text="https://developer.android.com/reference/android/widget/SearchView.html" />
+
+            <TextView
+                android:id="@+id/go_premium"
                 style="@style/categoryStyle"
                 android:text="@string/premium_label" />
 
@@ -52,7 +64,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/playingNow"
+        android:id="@+id/playing_now"
         style="@style/playingNow"
         android:text="Playing Now" />
 

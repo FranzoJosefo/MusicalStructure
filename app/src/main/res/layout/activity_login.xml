@@ -6,6 +6,10 @@
     android:orientation="vertical"
     tools:context="com.franciscoolivero.android.musicalstructure.LoginActivity">
 
+    <TextView
+        style="@style/screenLabelStyle"
+        android:text="@string/login_label_caps" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -49,7 +53,7 @@
             android:textColor="@android:color/darker_gray" />
 
         <Button
-            android:id="@+id/signInButton"
+            android:id="@+id/sign_in_button"
             style="@style/implemented_button"
             android:text="@string/login_button" />
 

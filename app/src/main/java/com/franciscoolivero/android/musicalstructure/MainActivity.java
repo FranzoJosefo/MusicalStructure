@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView playingNow = findViewById(R.id.playingNow);
+        TextView playingNow = findViewById(R.id.playing_now);
         playingNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,14 +29,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView premium = findViewById(R.id.goPremium);
+        TextView premium = findViewById(R.id.go_premium);
         premium.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, GoPremiumActivity.class));
             }
         });
-
 
     }
 }
